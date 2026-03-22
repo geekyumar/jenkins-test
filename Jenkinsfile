@@ -11,9 +11,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo '🔨 Building the project...'
-                ls -la
-                pwd
-                whoami
+                sh 'ls -la'
+                sh 'pwd'
+                sh 'whoami'
+
             }
         }
 
