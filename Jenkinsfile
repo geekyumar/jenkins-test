@@ -11,6 +11,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo '🔨 Building the project...'
+                ls -la
+                pwd
+                whoami
             }
         }
 
